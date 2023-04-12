@@ -1,0 +1,29 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+blockquote {
+    font-style: normal;
+}
+
+.site-header {
+    border-top: none;
+    border-bottom: 1px solid $border-color-01;
+}
+
+.site-title {
+    font-size: 30px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #F9CC38 !important;
+}
